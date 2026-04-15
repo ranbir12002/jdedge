@@ -1,0 +1,280 @@
+.facPage {
+  background: #fff;
+}
+
+/* HERO */
+/* HERO */
+.facHero {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.facHeroBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.facHeroBg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.facHeroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  z-index: 1;
+  backdrop-filter: blur(8px);
+}
+
+.facHeroInner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+}
+
+.facHeroContent {
+  animation: heroFadeIn 0.8s ease-out;
+}
+
+.facTitle {
+  margin: 0 0 16px 0;
+  font-size: 52px;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.facSub {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  max-width: 72ch;
+  font-size: 18px;
+}
+
+.kicker {
+  color: #d4af37;
+  /* Golden */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.facActions .btnGhost {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
+.facActions .btnGhost:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.facActions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BODY */
+.facBody {
+  padding: 44px 0 86px;
+}
+
+/* LIST */
+.facList {
+  display: grid;
+  gap: 16px;
+}
+
+/* Row wrapper with index */
+.facRow {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.facRowIndex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 18px;
+  font-weight: 950;
+  letter-spacing: .14em;
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 12px;
+}
+
+/* Card */
+.facCard {
+  border-radius: 28px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  /* min-height removed to let content dictate size, but left wrapper handles image size */
+}
+
+/* Photo */
+.facCardLeft {
+  background: rgba(0, 0, 0, 0.02);
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 14px;
+  /* Prevent stretching image if card is tall */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.facPhotoWrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  /* Force square */
+  height: auto;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.facPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+}
+
+/* Content */
+.facCardRight {
+  padding: 16px 18px 18px;
+}
+
+.facHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.facName {
+  font-weight: 950;
+  color: #141414;
+  letter-spacing: -0.2px;
+  font-size: 18px;
+}
+
+.facRole {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #777;
+}
+
+.facBio {
+  margin: 0 0 12px 0;
+  color: #555;
+  line-height: 1.75;
+  text-align: justify;
+  /* Aligns paragraph text blocks */
+}
+
+.facSplit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.facLabel {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.55);
+  margin-bottom: 8px;
+}
+
+.facBullets {
+  margin: 0;
+  padding-left: 18px;
+  color: #666;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.facActionsRow {
+  margin-top: 12px;
+}
+
+/* CTA spacing */
+.facCTA {
+  margin-top: 22px;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .facTitle {
+    font-size: 36px;
+  }
+
+  .facRow {
+    grid-template-columns: 42px 1fr;
+  }
+
+  .facCard {
+    grid-template-columns: 1fr;
+  }
+
+  .facCardLeft {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    min-height: 220px;
+  }
+
+  .facSplit {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .facRowIndex {
+    display: none;
+  }
+
+  .facRow {
+    grid-template-columns: 1fr;
+  }
+}

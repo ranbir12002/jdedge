@@ -1,0 +1,136 @@
+:root {
+  --bg: #0b0f17;
+  --card: rgba(255, 255, 255, 0.06);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.7);
+  --border: rgba(255, 255, 255, 0.12);
+  --brand: #64d2ff;
+  --brand2: #D4AF37;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: radial-gradient(1200px 800px at 20% 0%, rgba(255, 255, 255, 1) 0%, rgba(249, 249, 249, 1) 100%);
+  color: #000000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.container {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.appShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageMain {
+  flex: 1;
+  padding-top: 84px;
+  /* header height */
+}
+
+.globalFooter {
+  border-top: 1px solid var(--border);
+  padding: 22px 0;
+  background: rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(12px);
+}
+
+.footerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footerBadge {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+@media (max-width: 720px) {
+  .pageMain {
+    padding-top: 76px;
+  }
+
+  .footerRow {
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: flex-start;
+  }
+}
+
+/* Standardized Buttons (Global) */
+.btnPrimary,
+.btnGhost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  padding: 0 18px;
+  border-radius: 14px;
+  font-weight: 750;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .2s ease, background .15s ease, border-color .15s ease, color .15s ease;
+}
+
+.btnPrimary {
+  background: #fff;
+  color: #141414;
+  border: 1px solid rgba(244, 180, 0, 0.95);
+}
+
+.btnPrimary:hover {
+  background: #D4AF37;
+  color: #121212;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(244, 180, 0, 0.30), 0 0 0 4px rgba(244, 180, 0, 0.16);
+}
+
+.btnGhost {
+  background: rgba(255, 255, 255, 0.78);
+  color: #343434;
+  border: 1px solid rgba(40, 40, 40, 0.20);
+  backdrop-filter: blur(10px);
+}
+
+.btnGhost:hover {
+  border-color: rgba(244, 180, 0, 0.95);
+  background: rgba(244, 180, 0, 0.10);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(244, 180, 0, 0.18), 0 0 0 4px rgba(244, 180, 0, 0.10);
+}
+
+.btnGhost.small {
+  height: 40px;
+  font-size: 13px;
+  border-radius: 12px;
+}

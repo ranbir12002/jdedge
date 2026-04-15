@@ -1,0 +1,19 @@
+.loaderOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeOut 0.5s ease-out forwards;
+    animation-delay: 2.5s;
+}
+
+/* Very small centered video */
+.loaderVideo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 50%;
+}

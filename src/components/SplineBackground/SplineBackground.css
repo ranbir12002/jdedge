@@ -1,0 +1,28 @@
+.splineBg {
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.splineBg.fixed {
+    position: fixed;
+    /* full screen */
+}
+
+.splineBg.section {
+    position: absolute;
+    /* only inside parent */
+}
+
+.splineBg>div,
+.splineBg canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* optional: readability overlay */
+.splineOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(251, 250, 250);
+}

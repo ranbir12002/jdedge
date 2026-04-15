@@ -1,0 +1,599 @@
+/* ============================
+   JD EDGEucation — Premium Multi-Page Home
+   White + Gold + Grey
+   ============================ */
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.homePage {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- HERO ---------- */
+.heroStage {
+  position: relative;
+  min-height: calc(100vh - 84px);
+  display: flex;
+  align-items: center;
+  padding: 44px 0 58px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.heroBrand {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.edgeLine {
+  display: block;
+  /* forces next line */
+}
+
+.edgeGold {
+  color: #d4af37;
+  /* gold */
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.heroStage {
+  position: relative;
+  min-height: 80vh;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(255, 255, 255, 0.92) 42%,
+      rgba(255, 255, 255, 0.66) 62%,
+      rgba(255, 255, 255, 0.00) 82%);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  /* width: 100%; removed to fallback to container width */
+  padding-left: 40px;
+}
+
+.pill {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(244, 180, 0, 0.35);
+  background: rgba(244, 180, 0, 0.08);
+  color: #6a5200;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.heroTitle {
+  margin: 0 0 12px 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.02;
+}
+
+.heroWelcome {
+  font-size: 18px;
+  font-weight: 650;
+  color: #4a4a4a;
+  margin-bottom: 6px;
+}
+
+.heroBrand {
+  font-size: 68px;
+  font-weight: 900;
+  letter-spacing: -1.2px;
+  color: #171717;
+}
+
+.edgeGold {
+  color: #D4AF37;
+}
+
+.heroTagline {
+  margin: 0 0 18px 0;
+  color: #505050;
+  font-size: 16px;
+  line-height: 1.75;
+  max-width: 70ch;
+}
+
+/* CTA Buttons */
+.ctaRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+
+/* Trust row = premium vibe */
+.trustRow {
+  margin-top: 18px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 12px 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+  width: fit-content;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #4b4b4b;
+  font-weight: 650;
+}
+
+.trustDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(244, 180, 0, 0.95);
+  box-shadow: 0 0 0 3px rgba(244, 180, 0, 0.18);
+}
+
+.heroMeta {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #6a6a6a;
+}
+
+.heroMeta .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(40, 40, 40, 0.35);
+}
+
+/* ---------- BELOW ---------- */
+.belowStage {
+  padding: 70px 0 84px;
+  background: #fafafa;
+  border-top: 1px solid #ededed;
+}
+
+/* Section typography */
+.kicker {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #8a6a00;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  color: #171717;
+  font-weight: 800;
+  color: #111111;
+}
+
+.edgeGold {
+  color: #D4AF37;
+  /* your yellow */
+}
+
+.sectionSub {
+  margin: 10px 0 0 0;
+  color: #6a6a6a;
+  line-height: 1.65;
+  max-width: 70ch;
+}
+
+.sectionHeaderRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* ABOUT */
+.aboutBlock {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 26px;
+  padding: 26px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutBlock::before {
+  content: none;
+}
+
+.aboutInner {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  /* or flex-start */
+  gap: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutContent {
+  flex: 1;
+}
+
+.aboutMedia {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutVideo {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+  display: block;
+  object-fit: cover;
+}
+
+.aboutText {
+  margin: 0;
+  color: #555;
+  line-height: 1.85;
+  font-size: 15px;
+}
+
+.founderCard {
+  margin-top: 16px;
+  /* Quote box removed as per request */
+}
+
+.quote {
+  margin: 0;
+  font-weight: 800;
+  color: #1f1f1f;
+  line-height: 1.65;
+}
+
+.byline {
+  margin: 10px 0 0 0;
+  font-size: 13px;
+  color: #7a5d00;
+}
+
+/* PROGRAMS */
+.programsBlock {
+  margin-top: 24px;
+  overflow: hidden;
+  /* Prevent horizontal scrollbar on page */
+}
+
+/* MARQUEE SCROLL */
+.marqueeWrapper {
+  margin-top: 24px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* Optional: Fade edges */
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  /* Allow full width of all items */
+  animation: scroll 80s linear infinite;
+}
+
+/* Pause on hover for accessibility */
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+    /* Because we duplicated the list enough, specific logic: usually -50% if doubled list */
+    /* Implementation note: since we have 4 copies, we probably want to scroll cleanly. 
+       Ideally we calculate based on duplicates. 
+       If we have 4 sets A B C D, scrolling -25% moves one full set out. scrolling -50% moves 2 sets out.
+       For seamless loop of identical content, moving by -25% (1 set length) works if the track resets.
+       Wait, standard marquee trick:
+       [Items] [Items] -> animate to -100% of [Items] width.
+       Here we have [Items]*4. We can animate from 0 to -25% if the track is huge, but usually easiest is 0 to -50% with 2 sets.
+       Let's stick to standard loop logic: visually accurate if end matches start.
+       With 4 sets, mapping 0 to -50% means we show A B -> C D. 
+       Correction: To loop perfectly without JS measurement, we usually duplicate the ENTIRE rendered set. 
+       Or commonly: 0 to -50% works if the content is exactly duplicated in halves.
+       Since I used 4x duplication, -25% is one set. -50% is two sets.
+       Let's try -50% which is safe for 4x duplication (moves 2 sets).
+    */
+    transform: translateX(-50%);
+  }
+}
+
+/* Whole card is a Link within marquee */
+.programCard {
+  display: block;
+  flex: 0 0 auto;
+  /* Prevent shrinking */
+  width: 300px;
+  /* Fixed width for marquee */
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.05);
+  transition: transform .18s ease, box-shadow .22s ease, border-color .18s ease;
+}
+
+.programCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(244, 180, 0, 0.30);
+  box-shadow: 0 26px 58px rgba(0, 0, 0, 0.10);
+}
+
+/* Image placeholder area — swap with <img> later */
+.programMedia {
+  position: relative;
+  height: 200px;
+  background: #eee;
+  position: relative;
+  overflow: hidden;
+}
+
+.programImgRaw {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.programCard:hover .programImgRaw {
+  transform: scale(1.05);
+}
+
+.programMedia::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.08));
+}
+
+/* Different “looks” per card (placeholders) */
+.ph-yle {
+  background:
+    radial-gradient(circle at 25% 25%, rgba(244, 180, 0, 0.30), rgba(244, 180, 0, 0.00) 55%),
+    linear-gradient(135deg, #ffffff 0%, #f4f4f4 100%);
+}
+
+.ph-pro {
+  background:
+    radial-gradient(circle at 75% 25%, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.00) 55%),
+    linear-gradient(135deg, #ffffff 0%, #f3f3f3 100%);
+}
+
+.ph-exam {
+  background:
+    radial-gradient(circle at 70% 35%, rgba(244, 180, 0, 0.24), rgba(244, 180, 0, 0.00) 60%),
+    linear-gradient(135deg, #ffffff 0%, #f6f6f6 100%);
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  color: #2b2b2b;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+.programBody {
+  padding: 16px 16px 18px;
+}
+
+.programBody h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  color: #171717;
+}
+
+.programBody p {
+  margin: 0;
+  color: #666;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.programMeta {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(244, 180, 0, 0.10);
+  border: 1px solid rgba(244, 180, 0, 0.22);
+  color: #6a5200;
+  font-weight: 850;
+}
+
+.textLink {
+  display: inline-flex;
+  margin-top: 12px;
+  font-weight: 900;
+  font-size: 13px;
+  color: #141414;
+}
+
+.programCard:hover .textLink {
+  color: #8a6a00;
+}
+
+/* Mini quick links */
+.miniRow {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.miniFeature {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.04);
+  transition: transform .16s ease, box-shadow .20s ease, border-color .16s ease;
+}
+
+.miniFeature:hover {
+  transform: translateY(-4px);
+  border-color: rgba(244, 180, 0, 0.26);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.08);
+}
+
+.miniFeature h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #171717;
+}
+
+.miniFeature p {
+  margin: 0;
+  color: #666;
+  line-height: 1.7;
+}
+
+.miniLink {
+  display: inline-flex;
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 13px;
+  color: #141414;
+}
+
+.miniFeature:hover .miniLink {
+  color: #8a6a00;
+}
+
+/* CTA at bottom */
+.homeCTA {
+  margin-top: 18px;
+}
+
+.ctaCard {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 26px;
+  padding: 22px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.ctaCard h3 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  color: #171717;
+}
+
+.ctaCard p {
+  margin: 0;
+  color: #666;
+  line-height: 1.7;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .heroBrand {
+    font-size: 46px;
+  }
+
+  .aboutInner {
+    grid-template-columns: 1fr;
+  }
+
+  .programGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .miniRow {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  .heroStage {
+    min-height: calc(100vh - 76px);
+    padding: 34px 0 44px;
+  }
+
+  .heroBrand {
+    font-size: 38px;
+  }
+
+  .trustRow {
+    width: 100%;
+  }
+}

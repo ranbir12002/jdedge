@@ -1,0 +1,278 @@
+/* ============================
+   Course Detail — Premium Light
+   ============================ */
+
+.courseDetailPage {
+    padding-bottom: 80px;
+    background: #ffffff;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+}
+
+/* HERO */
+/* HERO */
+.detailHero {
+    position: relative;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    background: #2B2F85;
+    /* Fallback */
+}
+
+/* The actual image background */
+.detailHeroBg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.6);
+    transform: scale(1.1);
+    /* Prevent blur edges */
+    z-index: 0;
+}
+
+/* Gradient overlay to ensure text pop */
+.detailHeroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(43, 47, 133, 0.3), rgba(43, 47, 133, 0.7));
+    z-index: 1;
+}
+
+/* Content sits on top */
+.detailHeroContent {
+    position: relative;
+    z-index: 2;
+    width: min(1000px, 92%);
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.backLink:hover {
+    color: #D4AF37;
+    /* Gold */
+}
+
+.detailTitle {
+    font-size: 56px;
+    line-height: 1.1;
+    color: #fff;
+    margin: 0 0 16px 0;
+    letter-spacing: -1.5px;
+}
+
+.detailTagline {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 65ch;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+}
+
+.heroMeta {
+    display: inline-flex;
+    gap: 16px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 99px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.metaItem {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.metaIcon {
+    color: #D4AF37;
+}
+
+.detailTags {
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.detailTag {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    backdrop-filter: blur(4px);
+}
+
+/* SECTIONS */
+.detailContent {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+}
+
+.section {
+    margin-bottom: 48px;
+}
+
+.sectionTitle {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #2B2F85;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(43, 47, 133, 0.1);
+}
+
+.sectionText {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* LISTS (Who For / Benefits) */
+.checkList,
+.benefitsList {
+    display: grid;
+    gap: 16px;
+}
+
+.checkItem {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.checkIcon {
+    color: #D4AF37;
+    font-weight: 800;
+    margin-top: 2px;
+}
+
+/* EXAM FORMAT CARDS */
+.formatGrid {
+    display: grid;
+    gap: 16px;
+}
+
+.formatCard {
+    background: #f9f9f9;
+    border-left: 4px solid #D4AF37;
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+}
+
+.formatTitle {
+    font-weight: 800;
+    font-size: 16px;
+    margin: 0 0 4px 0;
+    color: #2B2F85;
+}
+
+.formatDesc {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.enrollCard {
+    background: #2B2F85;
+    color: #fff;
+    padding: 32px;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.enrollCard::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.2), transparent 70%);
+    pointer-events: none;
+}
+
+.enrollTitle {
+    font-size: 22px;
+    margin: 0 0 12px 0;
+    color: #fff;
+}
+
+.enrollDesc {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.btnEnroll {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: #D4AF37;
+    color: #2B2F85;
+    font-weight: 800;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btnEnroll:hover {
+    background: #fff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+    .detailContent {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .detailTitle {
+        font-size: 36px;
+    }
+}

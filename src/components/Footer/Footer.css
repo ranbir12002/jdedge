@@ -1,0 +1,151 @@
+/* Footer.css */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 0 24px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerTop {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Col 1: Brand */
+.footerBrand h2 {
+    color: #D4AF37;
+    /* Gold */
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footerFranchise {
+    color: #999;
+    line-height: 1.6;
+    max-width: 320px;
+}
+
+/* Col 2: Links */
+.footerLinks h3,
+.footerContact h3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0;
+}
+
+.linkList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.linkList a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.linkList a:hover {
+    color: #D4AF37;
+}
+
+/* Col 3: Contact */
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contactItem {
+    display: flex;
+    gap: 12px;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+.contactIcon {
+    color: #D4AF37;
+    font-size: 16px;
+}
+
+.contactItem a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contactItem a:hover {
+    color: #fff;
+}
+
+/* Socials */
+.footerSocials {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.socialBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0;
+    /* Hide any fallback text */
+    transition: all 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.iconSvg {
+    width: 20px;
+    height: 20px;
+}
+
+.socialBtn:hover {
+    background: #D4AF37;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* Bottom */
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
+    font-size: 12px;
+}
+
+.footerCopy {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .footerTop {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}

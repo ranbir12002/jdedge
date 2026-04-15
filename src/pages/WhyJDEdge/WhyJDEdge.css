@@ -1,0 +1,386 @@
+/* =========================
+   WHY JD EDGE (Clean CSS)
+   Matches current JSX exactly
+   ========================= */
+
+/* Page + container */
+.whyPage {
+  background: #fff;
+}
+
+.container {
+  width: min(1160px, 92%);
+  margin: 0 auto;
+}
+
+/* Typography helpers */
+.kicker {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6b6b6b;
+}
+
+.whyTitle {
+  margin: 0 0 12px 0;
+  font-size: 46px;
+  line-height: 1.12;
+  letter-spacing: -0.9px;
+  color: #121212;
+}
+
+.whySub {
+  margin: 0;
+  color: #555;
+  line-height: 1.85;
+  max-width: 72ch;
+}
+
+/* Section headings */
+.sectionKicker {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6b6b6b;
+}
+
+.sectionTitle {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  color: #141414;
+  letter-spacing: -0.35px;
+}
+
+.sectionSub {
+  margin: 0;
+  color: #666;
+  line-height: 1.75;
+  max-width: 76ch;
+}
+
+/* Buttons: Uses global */
+
+.heroButtons {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Dots */
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   HERO (Background + Right aligned content)
+   ========================= */
+
+.whyIntro {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 0;
+  /* content handles padding */
+}
+
+.whyIntroBg {
+  background-image: url("/assets/whyid.png");
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+}
+
+.whyIntroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 0;
+}
+
+/* Grid used only for alignment */
+.whyIntroGrid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  /* centers horizontally + vertically */
+  min-height: 520px;
+}
+
+
+.whyIntroContent {
+  max-width: 720px;
+  text-align: left;
+  /* keeps text readable */
+  padding: 86px 0 52px;
+}
+
+/* Mini proof card inside hero */
+.miniProof {
+  margin-top: 18px;
+  border-radius: 22px;
+  padding: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.06);
+}
+
+.miniProofTitle {
+  font-weight: 950;
+  color: #141414;
+  margin-bottom: 10px;
+  letter-spacing: -0.2px;
+}
+
+.miniProofGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  color: #666;
+  font-size: 14px;
+}
+
+.proofItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========================
+   HOW IT WORKS section
+   ========================= */
+
+.howSection {
+  padding: 44px 0 56px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: #fff;
+}
+
+.howHead {
+  margin-bottom: 14px;
+}
+
+.howGrid {
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.howRow {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.howIndex {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 14px;
+  font-weight: 950;
+  letter-spacing: 0.14em;
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 12px;
+}
+
+.howCard {
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.06);
+  padding: 14px 16px;
+}
+
+.howTitle {
+  font-weight: 950;
+  color: #141414;
+  letter-spacing: -0.2px;
+  margin-bottom: 6px;
+}
+
+.howText {
+  color: #666;
+  line-height: 1.75;
+  font-size: 14px;
+}
+
+.howFooter {
+  margin-top: 14px;
+}
+
+/* Inline text action link */
+.textAction {
+  text-decoration: none;
+  font-weight: 950;
+  color: #141414;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 2px;
+}
+
+.textAction:hover {
+  border-bottom-color: rgba(244, 180, 0, 0.95);
+}
+
+/* =========================
+   BODY / Sections
+   ========================= */
+
+.whyBody {
+  padding: 34px 0 86px;
+}
+
+.section {
+  margin-bottom: 26px;
+}
+
+/* Difference section with background image */
+/* Outer section just provides spacing */
+.differenceBg {
+  position: relative;
+  padding: 42px 0;
+}
+
+/* Put the image on the visible box */
+.differenceStrip {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  background-image: url("/assets/whyjd2.png");
+  background-size: cover;
+  background-position: center 55%;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.08);
+}
+
+/* Overlay sits INSIDE the same box */
+.differenceOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.82);
+  z-index: 0;
+}
+
+/* Ensure content is above overlay */
+.differenceHead,
+.compareGrid {
+  position: relative;
+  z-index: 1;
+}
+
+.compareGrid {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.compareRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.compareLeft {
+  border-radius: 18px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #666;
+  line-height: 1.7;
+}
+
+.compareRight {
+  border-radius: 18px;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #141414;
+  line-height: 1.7;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.07);
+}
+
+/* CTA */
+.ctaCardModern {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 26px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.08);
+}
+
+.ctaCardModern h3 {
+  margin: 0 0 6px 0;
+  color: #141414;
+}
+
+.ctaCardModern p {
+  margin: 0;
+  color: #5c5c5c;
+  line-height: 1.7;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 980px) {
+  .whyTitle {
+    font-size: 34px;
+  }
+
+  .whyIntroGrid {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+
+  .whyIntroGrid.rightAlign {
+    justify-items: start;
+  }
+
+  .whyIntroContent {
+    padding: 64px 0 42px;
+    max-width: 760px;
+  }
+
+  .miniProofGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .compareRow {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaCardModern {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  .howRow {
+    grid-template-columns: 42px 1fr;
+  }
+}
