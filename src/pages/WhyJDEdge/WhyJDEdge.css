@@ -13,6 +13,11 @@
   margin: 0 auto;
 }
 
+.edgeGold {
+  color: #d4af37;
+  font-weight: inherit;
+}
+
 /* Typography helpers */
 .kicker {
   margin: 0 0 10px 0;

@@ -41,7 +41,7 @@ export default function WhyJD() {
         <div className="container">
           <div className="whyIntroGrid rightAlign">
             <div className="whyIntroContent">
-              <p className="kicker">Why JD EDGE</p>
+              <p className="kicker">Why JD <span className="edgeGold">EDGE</span></p>
 
               <h1 className="whyTitle">
                 English is not just a subject —
@@ -49,7 +49,7 @@ export default function WhyJD() {
               </h1>
 
               <p className="whySub">
-                Judy Davidson’s EDGEucation Forum helps learners communicate with clarity,
+                Judy Davidson’s <span className="edgeGold">EDGE</span>ucation Forum helps learners communicate with clarity,
                 confidence, and purpose in a digital-first world by the keeping English language human
                 with thought, intent, empathy, and sound judgment.
               </p>
@@ -113,9 +113,9 @@ export default function WhyJD() {
 
             <div className="differenceStrip">
               <div className="differenceHead">
-                <p className="sectionKicker">The JD EDGE Difference</p>
+                <p className="sectionKicker">The JD <span className="edgeGold">EDGE</span> Difference</p>
                 <h2 className="sectionTitle">
-                  Not learning English, getting the edge in communication
+                  Not learning English, getting the <span className="edgeGold">edge</span> in communication
                 </h2>
                 <p className="sectionSub">
                   We focus on how learners think, speak, and respond in real contexts.

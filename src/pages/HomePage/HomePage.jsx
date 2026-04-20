@@ -27,20 +27,7 @@ export default function HomePage() {
     };
   }, []);
 
-  // Select highlight courses to display on Home
-  const FEATURED_SLUGS = [
-    "cambridge-yle",
-    "cambridge-bec",
-    "ielts-focus",
-    "ielts-foundation",
-    // PTE removed
-    "teachers-training",
-    "campus-corporate",
-    "soft-skills",
-    "essential-english",
-    "essential-business"
-  ];
-  const featuredCourses = COURSES.filter(c => FEATURED_SLUGS.includes(c.slug));
+  const featuredCourses = COURSES;
 
   return (
     <section className="homePage">

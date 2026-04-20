@@ -42,16 +42,16 @@ export default function FacultyPage() {
       {/* HERO */}
       <header className="facHero">
         <div className="facHeroBg">
-          <img src="/assets/faculty.jpeg" alt="Faculty Hero" />
+          <img src="/assets/faculty.jpeg" alt="Team Hero" />
         </div>
         <div className="facHeroOverlay" />
 
         <div className="container facHeroInner">
           <div className="facHeroContent">
-            <p className="kicker">Outstanding Faculty</p>
+            <p className="kicker">Our Team</p>
 
             <h1 className="facTitle">
-              Educators who teach English
+              The Team who teach English
               <br /> the way it’s meant to be used.
             </h1>
 

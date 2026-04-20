@@ -370,7 +370,7 @@
 .programMedia {
   position: relative;
   height: 200px;
-  background: #eee;
+  background: #f8f8f8;
   position: relative;
   overflow: hidden;
 }
@@ -378,8 +378,9 @@
 .programImgRaw {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s ease;
+  padding: 8px;
 }
 
 .programCard:hover .programImgRaw {

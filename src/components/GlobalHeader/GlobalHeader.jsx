@@ -8,7 +8,7 @@ const navItems = [
   { label: "Courses", to: "/courses" },
   { label: "Why JDedge?", to: "/why-jdedge" },
   { label: "Results & Testimonials", to: "/results" },
-  { label: "Faculty", to: "/faculty" },
+  { label: "The Team", to: "/faculty" },
   { label: "Contact Us", to: "/contact" },
 ];
 
@@ -31,9 +31,10 @@ export default function GlobalHeader() {
             <img
               className="brandLogo"
               src="/assets/hero.png"
-              alt="JDEDGEUCATION logo"
+              alt=""
             />
           </span>
+
         </NavLink>
 
 

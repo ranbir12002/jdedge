@@ -62,6 +62,10 @@ const OUTCOME_STEPS = [
     text: "Confidence through guided practice: structured speaking drills + real-world prompts.",
   },
   {
+    title: "Week 3",
+    text: "Functional Application: applying skills to real-world scenarios like public speaking, debating, or formal writing.",
+  },
+  {
     title: "Week 4",
     text: "Refinement: feedback loops improve tone, grammar accuracy, and response flow — consistently.",
   },
