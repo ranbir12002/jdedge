@@ -14,6 +14,8 @@ const WhyJDEdge = lazy(() => import("./pages/WhyJDEdge/WhyJDEdge.jsx"));
 const ResultsTestimonials = lazy(() => import("./pages/ResultsTestimonials/ResultsTestimonials.jsx"));
 const Faculty = lazy(() => import("./pages/Faculty/Faculty.jsx"));
 const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs.jsx"));
+const OurPartners = lazy(() => import("./pages/OurPartners/OurPartners.jsx"));
+const WhatsNew = lazy(() => import("./pages/WhatsNew/WhatsNew.jsx"));
 
 export default function App() {
   return (
@@ -31,6 +33,8 @@ export default function App() {
             <Route path="/results" element={<ResultsTestimonials />} />
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/partners" element={<OurPartners />} />
+            <Route path="/whats-new" element={<WhatsNew />} />
 
             {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />

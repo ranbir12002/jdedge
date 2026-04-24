@@ -1,0 +1,143 @@
+.whatsNewPage {
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.whatsNewHero {
+  padding: 80px 0 60px;
+  background: #f7f9fc;
+  border-bottom: 1px solid rgba(43, 47, 133, 0.05);
+  text-align: center;
+}
+
+.whatsNewTitle {
+  font-size: 48px;
+  color: #2B2F85;
+  margin-top: 10px;
+  letter-spacing: -1px;
+}
+
+.whatsNewContent {
+  padding: 60px 0;
+}
+
+.newsSection {
+  margin-bottom: 80px;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.newsImg {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.newBadge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #D4AF37;
+  color: #fff;
+  font-weight: 900;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.newsText h2 {
+  font-size: 36px;
+  color: #2B2F85;
+  margin-bottom: 20px;
+}
+
+.newsText p {
+  line-height: 1.8;
+  color: #555;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.newsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.newsList li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  color: #444;
+  font-weight: 500;
+}
+
+.newsList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #D4AF37;
+  font-weight: 900;
+}
+
+.videoSection {
+  padding-top: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionHeader h2 {
+  font-size: 32px;
+  color: #2B2F85;
+  margin-bottom: 10px;
+}
+
+.sectionHeader p {
+  color: #777;
+}
+
+.videoWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.featuredVideo {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 980px) {
+  .newsGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .newsText {
+    order: 2;
+  }
+  
+  .newsMedia {
+    order: 1;
+  }
+  
+  .whatsNewTitle {
+    font-size: 36px;
+  }
+}

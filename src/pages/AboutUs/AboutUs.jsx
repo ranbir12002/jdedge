@@ -32,14 +32,14 @@ export default function AboutPage() {
       <main className="aboutBody">
         <div className="container">
           {/* WHO WE ARE */}
-          <section className="aboutSection whoSplit">
+          <section className="aboutSection whoSplit goldenSection">
             <div className="whoText">
               <div className="sectionHeader">
                 <h2>Who We Are</h2>
               </div>
 
               <p>
-                At <strong>Judy Davidson’s EDGEucation Forum</strong>, we believe in helping young
+                At <strong>Judy Davidson’s <span className="goldenEdge">EDGE</span>ucation Forum</strong>, we believe in helping young
                 learners communicate with clarity, confidence, and purpose in a digital-first world.
                 Today’s students are digital natives, surrounded by technology and powerful tools,
                 with English firmly established as the global language.
@@ -122,11 +122,11 @@ export default function AboutPage() {
             </div>
 
             <p>
-              <strong>Judy Davidson’s EDGEucation Forum</strong> is a franchisee of the
+              <strong>Judy Davidson’s <span className="goldenEdge">EDGE</span>ucation Forum</strong> is a franchisee of the
               <strong> Thrive Academy of Cambridge English</strong>.
             </p>
             <p>
-              EDGEucation is the core company, and this association enables us to deliver
+              <span className="goldenEdge">EDGE</span>ucation is the core company, and this association enables us to deliver
               globally recognised Cambridge-aligned programs. We operate in
               <strong> Hyderabad</strong>.
             </p>
@@ -136,7 +136,7 @@ export default function AboutPage() {
           <section className="aboutCTA">
             <div className="ctaCard">
               <div>
-                <h3>Ready to build your communication edge?</h3>
+                <h3>Ready to build your communication <span className="goldenEdge">EDGE</span>?</h3>
                 <p>
                   Explore our programs or speak with us to find the right learning
                   path for your goals.

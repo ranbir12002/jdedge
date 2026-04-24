@@ -9,6 +9,8 @@ const navItems = [
   { label: "Why JDedge?", to: "/why-jdedge" },
   { label: "Results & Testimonials", to: "/results" },
   { label: "The Team", to: "/faculty" },
+  { label: "Our Partners", to: "/partners" },
+  { label: "What's New", to: "/whats-new" },
   { label: "Contact Us", to: "/contact" },
 ];
 
