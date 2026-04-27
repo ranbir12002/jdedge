@@ -26,7 +26,7 @@ export default function OurPartners() {
           <div className="partnershipInfo">
             <h2>CMR Group of Institutions</h2>
             <p>
-              Judy Davidson’s EDGEucation Forum is proud to partner with the <strong>CMR Group of Institutions</strong>, 
+              Judy Davidson’s <span className="edgeGold">EDGE</span>ucation Forum is proud to partner with the <strong>CMR Group of Institutions</strong>, 
               a name synonymous with academic excellence and innovation.
             </p>
             <p>

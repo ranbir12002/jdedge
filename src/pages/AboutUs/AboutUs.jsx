@@ -22,7 +22,7 @@ export default function AboutPage() {
             <br /> it is judgment, intent, and confidence.
           </h1>
           <p className="aboutHeroSub">
-            At Judy Davidson’s EDGEucation Forum, we help learners develop English as a
+            At Judy Davidson’s <span className="edgeGold">EDGE</span>ucation Forum, we help learners develop English as a
             lifelong human skill — not just an academic requirement.
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function AboutPage() {
               </div>
 
               <p>
-                At <strong>Judy Davidson’s <span className="goldenEdge">EDGE</span>ucation Forum</strong>, we believe in helping young
+                At <strong>Judy Davidson’s <span className="edgeGold">EDGE</span>ucation Forum</strong>, we believe in helping young
                 learners communicate with clarity, confidence, and purpose in a digital-first world.
                 Today’s students are digital natives, surrounded by technology and powerful tools,
                 with English firmly established as the global language.
@@ -94,7 +94,7 @@ export default function AboutPage() {
                 <h3>A Note from the Founder</h3>
 
                 <p>
-                  Judy Davidson’s EDGEucation Forum was created from a simple observation: many
+                  Judy Davidson’s <span className="edgeGold">EDGE</span>ucation Forum was created from a simple observation: many
                   students have access to knowledge and tools but struggle to express themselves
                   with confidence and clarity.
                 </p>
@@ -122,11 +122,11 @@ export default function AboutPage() {
             </div>
 
             <p>
-              <strong>Judy Davidson’s <span className="goldenEdge">EDGE</span>ucation Forum</strong> is a franchisee of the
+              <strong>Judy Davidson’s <span className="edgeGold">EDGE</span>ucation Forum</strong> is a franchisee of the
               <strong> Thrive Academy of Cambridge English</strong>.
             </p>
             <p>
-              <span className="goldenEdge">EDGE</span>ucation is the core company, and this association enables us to deliver
+              <span className="edgeGold">EDGE</span>ucation is the core company, and this association enables us to deliver
               globally recognised Cambridge-aligned programs. We operate in
               <strong> Hyderabad</strong>.
             </p>
@@ -136,7 +136,7 @@ export default function AboutPage() {
           <section className="aboutCTA">
             <div className="ctaCard">
               <div>
-                <h3>Ready to build your communication <span className="goldenEdge">EDGE</span>?</h3>
+                <h3>Ready to build your communication <span className="edgeGold">EDGE</span>?</h3>
                 <p>
                   Explore our programs or speak with us to find the right learning
                   path for your goals.
