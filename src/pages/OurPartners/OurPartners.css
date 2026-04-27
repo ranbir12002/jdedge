@@ -1,11 +1,11 @@
 .partnersPage {
-  background: #f7f9fc;
-  min-height: 80vh;
+  background: #ffffff;
+  min-height: 100vh;
 }
 
 .partnersHero {
   padding: 80px 0 60px;
-  background: #ffffff;
+  background: linear-gradient(135deg, #f7f9fc 0%, #eef2f7 100%);
   border-bottom: 1px solid rgba(43, 47, 133, 0.05);
   text-align: center;
 }
@@ -15,62 +15,156 @@
   color: #2B2F85;
   margin-top: 10px;
   letter-spacing: -1px;
+  font-weight: 800;
 }
 
 .partnersContent {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
-.partnerCard {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 40px;
+.partnershipSection {
+  max-width: 900px;
+  margin: 0 auto;
   background: #ffffff;
-  padding: 40px;
-  border-radius: 24px;
-  border: 1px solid rgba(43, 47, 133, 0.08);
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.06);
-  align-items: center;
+  padding: 60px;
+  border-radius: 40px;
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(43, 47, 133, 0.05);
 }
 
-.partnerLogo {
-  background: #f8f9fb;
-  padding: 20px;
-  border-radius: 16px;
+.logosContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  gap: 40px;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f1f5f9;
 }
 
-.partnerImg {
-  max-width: 100%;
-  max-height: 100%;
+.logoWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 24px;
+  transition: transform 0.3s ease;
+  border: 1px solid #f1f5f9;
+}
+
+.logoWrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.brandLogo, .partnerLogoImg {
+  max-width: 90%;
+  max-height: 90%;
   object-fit: contain;
 }
 
-.partnerInfo h2 {
-  font-size: 28px;
+.partnershipX {
+  font-size: 48px;
   color: #2B2F85;
-  margin-bottom: 16px;
+  font-weight: 200;
+  opacity: 0.3;
 }
 
-.partnerInfo p {
+.partnershipInfo h2 {
+  font-size: 36px;
+  color: #2B2F85;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.partnershipInfo p {
+  font-size: 18px;
   line-height: 1.8;
-  color: #555;
-  margin-bottom: 16px;
-  font-size: 16px;
+  color: #475569;
+  margin-bottom: 24px;
 }
 
-@media (max-width: 820px) {
-  .partnerCard {
-    grid-template-columns: 1fr;
-    text-align: center;
+.benefitsBox {
+  background: #f1f5f9;
+  padding: 40px;
+  border-radius: 32px;
+  margin: 40px 0;
+}
+
+.benefitsBox h3 {
+  font-size: 20px;
+  color: #2B2F85;
+  margin-bottom: 24px;
+}
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+}
+
+.benefitsList li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+  font-size: 17px;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.benefitsList li:last-child {
+  margin-bottom: 0;
+}
+
+.checkIcon {
+  width: 24px;
+  height: 24px;
+  background: #2B2F85;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.partnershipClosing {
+  font-style: italic;
+  font-weight: 500;
+  color: #2B2F85 !important;
+  border-left: 4px solid #D4AF37;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .partnershipSection {
+    padding: 30px;
+    border-radius: 24px;
   }
   
-  .partnerLogo {
-    margin: 0 auto;
+  .logosContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .partnershipX {
+    transform: rotate(90deg);
+  }
+  
+  .logoWrapper {
     width: 100%;
-    max-width: 300px;
+    height: 180px;
+  }
+  
+  .partnershipInfo h2 {
+    font-size: 28px;
+  }
+  
+  .benefitsBox {
+    padding: 24px;
   }
 }

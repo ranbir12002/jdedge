@@ -12,41 +12,107 @@ export default function WhatsNew() {
       </header>
 
       <main className="whatsNewContent container">
-        {/* SUMMER CAMP SECTION */}
+        {/* SUMMER CAMP MAIN POSTER SECTION */}
         <section className="newsSection">
           <div className="newsGrid">
             <div className="newsMedia">
-              <img src="/assets/course.png" alt="Summer Camp 2026" className="newsImg" />
+              <img src="/assets/whats new/image.png" alt="Summer Camp 2026 Poster" className="newsImg" />
             </div>
             <div className="newsText">
-              <div className="newBadge">Coming Soon</div>
+              <div className="newBadge">Registration Open</div>
               <h2>Summer Camp 2026</h2>
               <p>
-                Get ready for an unforgettable summer! Our upcoming Summer Camp is designed to blend fun, 
-                creativity, and intensive language learning. From interactive workshops to group projects, 
-                this program is perfect for students looking to sharpen their communication skills while 
-                making new friends.
+                Unleash your child's potential this summer at Thrive Academy! Our Summer Camp 2026 
+                is a 4-week intensive program focusing on Communication, Creativity, and Confidence. 
+                Experience a perfect blend of learning and fun in a supportive environment.
               </p>
-              <ul className="newsList">
-                <li>Interactive Speaking Sessions</li>
-                <li>Creative Writing Workshops</li>
-                <li>Confidence Building Activities</li>
-                <li>Age-appropriate Groups</li>
-              </ul>
-              <button className="btnPrimary">Express Interest</button>
+              <div className="eventInfo">
+                <div className="infoItem">
+                  <strong>Dates:</strong> 4th May – 5th June
+                </div>
+                <div className="infoItem">
+                  <strong>Time:</strong> 10:00 AM – 12:00 PM (Mon-Fri)
+                </div>
+                <div className="infoItem">
+                  <strong>Location:</strong> AS Rao Nagar, Hyderabad
+                </div>
+              </div>
+              <div className="earlyBird">
+                <span className="starIcon">⭐</span> 
+                Register before <strong>30th April</strong> for an Early Bird Advantage!
+              </div>
+              <div className="contactSection">
+                <p>Call / WhatsApp for Details:</p>
+                <div className="phoneNumbers">
+                  <a href="tel:+917207174555" className="phoneLink">7207174555</a>
+                  <span>|</span>
+                  <a href="tel:+917842071555" className="phoneLink">7842071555</a>
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
+
+        {/* BATCH DETAILS SECTION */}
+        <section className="batchDetailsSection">
+          <div className="sectionHeader">
+            <h2>Programme Batches</h2>
+            <p>Tailored learning paths for every age group</p>
+          </div>
+          <div className="batchGrid">
+            <div className="batchCard explorer">
+              <div className="batchHeader">
+                <h3>Batch 1: Little Explorers</h3>
+                <span className="ageTag">Ages 5 - 7</span>
+              </div>
+              <p className="batchTagline">Fun & Creative Learning!</p>
+              <ul className="batchList">
+                <li>Phonics & Storytime</li>
+                <li>Games & Art</li>
+                <li>Music & Confidence</li>
+              </ul>
+            </div>
+
+            <div className="batchCard communicator">
+              <div className="batchHeader">
+                <h3>Batch 2: Young Communicators</h3>
+                <span className="ageTag">Ages 8 - 11</span>
+              </div>
+              <p className="batchTagline">Express & Create!</p>
+              <ul className="batchList">
+                <li>Speaking & Writing</li>
+                <li>Drama & Role Play</li>
+                <li>Public Speaking</li>
+              </ul>
+            </div>
+
+            <div className="batchCard leader">
+              <div className="batchHeader">
+                <h3>Batch 3: Future Leaders</h3>
+                <span className="ageTag">Ages 12 - 15</span>
+              </div>
+              <p className="batchTagline">Lead & Inspire!</p>
+              <ul className="batchList">
+                <li>Debates & Discussions</li>
+                <li>Leadership Skills</li>
+                <li>Presentations</li>
+              </ul>
+            </div>
+          </div>
+          <div className="batchPosterWrapper">
+            <img src="/assets/whats new/image2.jpeg" alt="Batch Details Poster" className="batchPosterImg" />
           </div>
         </section>
 
         {/* VIDEO SECTION */}
         <section className="videoSection">
           <div className="sectionHeader">
-            <h2>Throwback to Last Year</h2>
-            <p>Catch a glimpse of the energy and excitement from our previous school sessions.</p>
+            <h2>Glimpses of Last Summer Camp</h2>
+            <p>Relive the magic and energy of our 2025 Summer Camp sessions.</p>
           </div>
-          <div className="videoWrapper">
+          <div className="videoWrapper reel">
             <video 
-              src="/assets/get the edge.mp4" 
+              src="/assets/reel.mp4" 
               controls 
               autoPlay 
               muted 

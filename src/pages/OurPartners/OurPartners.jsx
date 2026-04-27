@@ -12,21 +12,49 @@ export default function OurPartners() {
       </header>
 
       <main className="partnersContent container">
-        <section className="partnerCard">
-          <div className="partnerLogo">
-            <img src="/assets/hero.png" alt="CMR Group of Institutions" className="partnerImg" />
+        <section className="partnershipSection">
+          <div className="logosContainer">
+            <div className="logoWrapper">
+              <img src="/assets/hero.png" alt="JD Edge Logo" className="brandLogo" />
+            </div>
+            <div className="partnershipX">×</div>
+            <div className="logoWrapper">
+              <img src="/assets/cmr.png" alt="CMR Group of Institutions" className="partnerLogoImg" />
+            </div>
           </div>
-          <div className="partnerInfo">
+
+          <div className="partnershipInfo">
             <h2>CMR Group of Institutions</h2>
             <p>
-              Judy Davidson’s EDGEucation Forum is proud to partner with the CMR Group of Institutions. 
-              This strategic alliance brings together academic excellence and professional communication training. 
-              Together, we focus on empowering students with the skills they need to excel in their academic 
-              journeys and future careers.
+              Judy Davidson’s EDGEucation Forum is proud to partner with the <strong>CMR Group of Institutions</strong>, 
+              a name synonymous with academic excellence and innovation.
             </p>
             <p>
-              Our collaboration ensures that learners at CMR have access to world-class language programs 
-              aligned with global standards, fostering a culture of clarity, confidence, and continuous growth.
+              This strategic collaboration brings together strong academic foundations and high-impact communication 
+              training, creating a powerful learning ecosystem for students.
+            </p>
+            
+            <div className="benefitsBox">
+              <h3>Together, we equip learners with:</h3>
+              <ul className="benefitsList">
+                <li>
+                  <span className="checkIcon">✓</span>
+                  Global-standard language and communication skills
+                </li>
+                <li>
+                  <span className="checkIcon">✓</span>
+                  Confidence to express ideas with clarity and impact
+                </li>
+                <li>
+                  <span className="checkIcon">✓</span>
+                  Career-ready competencies for a competitive world
+                </li>
+              </ul>
+            </div>
+
+            <p className="partnershipClosing">
+              At CMR, this partnership goes beyond the classroom—fostering a culture of confidence, 
+              clarity, and continuous growth that prepares students not just for exams, but for life and leadership.
             </p>
           </div>
         </section>
