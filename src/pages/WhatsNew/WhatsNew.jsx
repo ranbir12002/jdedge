@@ -7,7 +7,7 @@ export default function WhatsNew() {
       <header className="whatsNewHero">
         <div className="container">
           <p className="kicker">Updates & Events</p>
-          <h1 className="whatsNewTitle">What's New at JD <span style={{ color: "#C9A84C" }}>EDGE</span></h1>
+          <h1 className="whatsNewTitle">What's New at JD <span className="goldText">EDGE</span></h1>
         </div>
       </header>
 

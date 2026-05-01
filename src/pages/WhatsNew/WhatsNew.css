@@ -18,6 +18,10 @@
   font-weight: 800;
 }
 
+.goldText {
+  color: #D4AF37;
+}
+
 .whatsNewContent {
   padding: 60px 0;
 }
@@ -143,8 +147,9 @@
 .batchDetailsSection {
   margin-bottom: 100px;
   padding: 80px 40px;
-  background: #f1f5f9;
+  background: #ffffff; /* White background */
   border-radius: 40px;
+  border: 1px solid rgba(43, 47, 133, 0.1);
 }
 
 .batchGrid {
@@ -214,9 +219,9 @@
   font-weight: 900;
 }
 
-.batchCard.explorer { border-top: 6px solid #f59e0b; }
-.batchCard.communicator { border-top: 6px solid #10b981; }
-.batchCard.leader { border-top: 6px solid #3b82f6; }
+.batchCard.explorer { border-top: 6px solid #D4AF37; } /* Gold */
+.batchCard.communicator { border-top: 6px solid #2B2F85; } /* Blue */
+.batchCard.leader { border-top: 6px solid #D4AF37; } /* Gold */
 
 .batchPosterWrapper {
   max-width: 800px;

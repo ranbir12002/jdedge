@@ -63,6 +63,15 @@ export default function GlobalHeader() {
         </div>
       </div>
 
+      {/* Scrolling Text Trail */}
+      <div className="tickerWrapper">
+        <div className="tickerContent">
+          <NavLink to="/whats-new" className="tickerLink">
+            ✨ Summer Camp 2026 Registration Open! ✨ Unleash your child's potential this summer at Thrive Academy! ✨ 4th May – 5th June ✨ Call 7207174555 for Details ✨ Limited Seats Available! ✨
+          </NavLink>
+        </div>
+      </div>
+
       <nav id="site-menu" className={open ? "menu open" : "menu"}>
         <div className="container menuInner">
           {navItems.map((item) => (
