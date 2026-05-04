@@ -12,6 +12,7 @@ const navItems = [
   { label: "Our Partners", to: "/partners" },
   { label: "What's New", to: "/whats-new" },
   { label: "Contact Us", to: "/contact" },
+  { label: "We are HIRING!!", to: "/hiring" },
 ];
 
 export default function GlobalHeader() {

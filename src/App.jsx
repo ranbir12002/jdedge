@@ -16,7 +16,7 @@ const Faculty = lazy(() => import("./pages/Faculty/Faculty.jsx"));
 const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs.jsx"));
 const OurPartners = lazy(() => import("./pages/OurPartners/OurPartners.jsx"));
 const WhatsNew = lazy(() => import("./pages/WhatsNew/WhatsNew.jsx"));
-
+const Hiring = lazy(() => import("./pages/Hiring/Hiring.jsx"));
 export default function App() {
   return (
     <div className="appShell">
@@ -35,7 +35,7 @@ export default function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/partners" element={<OurPartners />} />
             <Route path="/whats-new" element={<WhatsNew />} />
-
+            <Route path="/hiring" element={<Hiring />} />
             {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
